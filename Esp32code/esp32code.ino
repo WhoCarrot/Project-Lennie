@@ -107,8 +107,6 @@ void setup() {
     ledcAttachPin(pins[i], i);
     ledcSetup(i, 12000, 8);
   }
-  pinMode(relay1, OUTPUT);
-  pinMode(relay2, OUTPUT);
   pinMode(button, INPUT);
   
   Serial.println("Outputs set up");
@@ -199,7 +197,6 @@ void loop() {
   if (experiment_time_current > next_step) {
     printf("%f, %f\n", percentage_done, current_length);
 
-    
     double turn_off = experiment_time_current + settings[next_step_id].ontime;
     settings[next_step_id].turn_off = turn_off;
 
@@ -215,7 +212,7 @@ void loop() {
 
   // Turn all leds of where nessecary
   for (setting s : settings) {
-    if (experiment_time_current >= s.turn_off && s.pin != current_one_fuck_this) {
+    if (experiment_time_current >= s.turn_off) {
       ledcWrite(s.pin, 0);
     }
   }
