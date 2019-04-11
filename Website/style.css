@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    background: #EEE;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    max-width: initial;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h2 {
+    margin-bottom: 5px;
+}
+
+.vibrator-settings {
+    padding: 5px;
+    border-radius: 3px;
+    margin: 15px;
+}
+
+#vibrator-settings {
+    overflow: scroll;
+    background: #DDD;
+    height: 654px;
+    border-radius: 3px;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer button {
+    line-height: 0;
+    height: 27px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.dark {
+    background: #CCC;
+}
+
+.light {
+    background: #DDD;
+}
+
+.button-holder {
+    text-align: center;
+}
+
+.vibrator-header code {
+    float: left;
+}
+
+.vibrator-header button {
+    float: right;
+    line-height: 0;
+    height: 27px;
+    padding: 0 10px;
+    margin-bottom: 0;
+}
+
+#vibrator-buttons .button-holder button {
+    padding: 0 10px !important;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 0;
+    height: 27px;
+}
+
+label {
+    text-align: center;
+    margin: 0;
+}
+
+input {
+    margin-bottom: 5px;
+}

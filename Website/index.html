@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PROJECT LENNIE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/skeleton.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header">
+            <h2>PROJECT LENNIE</h2>
+        </div>
+        <div class="row" id="vibrator-buttons"></div>
+        <div class="row" id="vibrator-settings">
+            <div class="row vibrator-settings">
+                <div class="row">
+                    <div class="vibrator-setting six columns">
+                        <label for="experimenttimeduration">Duration (s)</label>
+                        <input class="u-full-width" type="number" id="experimenttimeduration" value="60">
+                    </div>
+                    <div class="vibrator-setting six columns">
+                        <label for="setbackpercentage">Setback (%)</label>
+                        <input class="u-full-width" type="number" id="setbackpercentage" value="20">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="vibrator-setting six columns">
+                        <label for="hardnessfrom">Hardness start (%)</label>
+                        <input class="u-full-width" type="number" id="hardnessfrom" value="80">
+                    </div>
+                    <div class="vibrator-setting six columns">
+                        <label for="hardnessto">Hardness end (%)</label>
+                        <input class="u-full-width" type="number" id="hardnessto" value="40">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="vibrator-setting six columns">
+                        <label for="lengthfrom">Length start (%)</label>
+                        <input class="u-full-width" type="number" id="lengthfrom" value="100">
+                    </div>
+                    <div class="vibrator-setting six columns">
+                        <label for="lengthto">Length end (%)</label>
+                        <input class="u-full-width" type="number" id="lengthto" value="200">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="footer">
+            <button class="button-primary" onclick="submit()">Submit</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
